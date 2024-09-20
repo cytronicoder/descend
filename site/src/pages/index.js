@@ -1,7 +1,10 @@
+import { useEffect, useState } from 'react';
 import Head from "next/head";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Link from 'next/link';
+
+import { zalgoGeneration } from "../utils/zalgo";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,6 +18,12 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const [zalgoText, setZalgoText] = useState([]);
+
+  useEffect(() => {
+    setZalgoText([zalgoGeneration("find me some light please I can't see", 1, 1, 1), zalgoGeneration("it's so dark down here", 1, 1, 1)]);
+  }, []);
+
   return (
     <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
       <Head>
@@ -35,12 +44,12 @@ export default function Home() {
               Code: <code className={styles.code}>DEPLOYMENT_NOT_FOUND</code>
             </span>
             <span className={styles.devinfoLine}>
-              <s>ID</s> Orpheus: <code className={styles.code}>f̸̜͑̽͝i̴̡͉͑̈n̸̛͖͉̬̈̆d̸̢͔̪̈̊ ̶͓̼̹͐m̶̙̙̣̿͛̌e̴͈͌ ̴̢̺͛̔͠ṣ̸̞̍̅ǫ̵̭̦̽̌m̷͇̪̋͑ͅě̷͇̉ ̸̺͉̂̉̋͜l̴̰͛͒í̶̛̫̖ġ̶͎͕̚h̵̢̗̾̀̏͜ṯ̶͇̀ ̵̹͓̗̃p̶̞͔̎͊l̵̲͔̣̆̃ȇ̵̡̦̮͆̕a̵̜̳͐̚ͅs̵̩̏̓e̸̖̿͂ ̷̜̫̰́I̶͒̕ͅ ̵̫̻̔̊̊ć̵͉̑́a̶̢̹͕̒̀̄ǹ̷͎͙̑'̶̞͒t̸͙̬͙̒ ̵̼̫̥̀͗ś̶̮̙ē̷̠̒e̷͚͖̲͆̀</code>
+              <s>ID</s> Orpheus: <code className={styles.code}>{zalgoText[0]}</code>
             </span>
           </p>
           <Link href="https://hackclub.com" className={styles.ownerError}>
             <div className={styles.note}>
-              <s>This deployment cannot be found. For more information and troubleshooting,</s> į̷̟͆t̶̤̓̓̃'̸͍͔̠̎š̴̻͜ ̸͓̠̌͐̿s̴̛̞͍̱̉ŏ̵̯̆͜ ̸̺̊̀̏d̷͇̟́͠ả̵̼̤̼͌͋r̸̦̼̈́̋̕k̶̨͗̊ ̵̤̅̅̆d̴̰̬̿̃o̶̟͚͗w̵̨͔̔ͅn̷͉̔ͅ ̶̨̙͘h̷͍̞̆̏͝ë̵̙́́͑͜ȑ̵̃̈͜ë̷͙͖́ see our documentation.
+              <s>This deployment cannot be found. For more information and troubleshooting,</s> {zalgoText[1]} see our documentation.
             </div>
           </Link>
         </main>
