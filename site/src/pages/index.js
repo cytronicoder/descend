@@ -35,12 +35,12 @@ export default function Home() {
               Code: <code className={styles.code}>DEPLOYMENT_NOT_FOUND</code>
             </span>
             <span className={styles.devinfoLine}>
-              ID: <code className={styles.code}>sin1::g6x4x-1726839005229-fcf1c0eab6eb</code>
+              <s>ID</s> Orpheus: <code className={styles.code}>f̸̜͑̽͝i̴̡͉͑̈n̸̛͖͉̬̈̆d̸̢͔̪̈̊ ̶͓̼̹͐m̶̙̙̣̿͛̌e̴͈͌ ̴̢̺͛̔͠ṣ̸̞̍̅ǫ̵̭̦̽̌m̷͇̪̋͑ͅě̷͇̉ ̸̺͉̂̉̋͜l̴̰͛͒í̶̛̫̖ġ̶͎͕̚h̵̢̗̾̀̏͜ṯ̶͇̀ ̵̹͓̗̃p̶̞͔̎͊l̵̲͔̣̆̃ȇ̵̡̦̮͆̕a̵̜̳͐̚ͅs̵̩̏̓e̸̖̿͂ ̷̜̫̰́I̶͒̕ͅ ̵̫̻̔̊̊ć̵͉̑́a̶̢̹͕̒̀̄ǹ̷͎͙̑'̶̞͒t̸͙̬͙̒ ̵̼̫̥̀͗ś̶̮̙ē̷̠̒e̷͚͖̲͆̀</code>
             </span>
           </p>
-          <Link href="https://vercel.com/docs/errors/platform-error-codes#deployment_not_found" className={styles.ownerError}>
+          <Link href="https://hackclub.com" className={styles.ownerError}>
             <div className={styles.note}>
-              This deployment cannot be found. For more information and troubleshooting, see our documentation.
+              <s>This deployment cannot be found. For more information and troubleshooting,</s> į̷̟͆t̶̤̓̓̃'̸͍͔̠̎š̴̻͜ ̸͓̠̌͐̿s̴̛̞͍̱̉ŏ̵̯̆͜ ̸̺̊̀̏d̷͇̟́͠ả̵̼̤̼͌͋r̸̦̼̈́̋̕k̶̨͗̊ ̵̤̅̅̆d̴̰̬̿̃o̶̟͚͗w̵̨͔̔ͅn̷͉̔ͅ ̶̨̙͘h̷͍̞̆̏͝ë̵̙́́͑͜ȑ̵̃̈͜ë̷͙͖́ see our documentation.
             </div>
           </Link>
         </main>
