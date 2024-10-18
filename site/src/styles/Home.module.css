@@ -113,6 +113,33 @@
   z-index: 1;
 }
 
+.bombTimerOverlay {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: rotate(-10deg);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .bombTimerOverlay {
+    top: 30%;
+    left: 25%;
+    transform: rotate(-5deg);
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bombTimerOverlay {
+    left: 15%;
+    transform: rotate(-2deg);
+  }
+}
+
 /* @keyframes glitch {
   0% {
     transform: none;

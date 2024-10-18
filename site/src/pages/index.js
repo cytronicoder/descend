@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import Link from 'next/link';
 
 import { zalgoGeneration } from "../utils/zalgo";
+import BombTimer from '../../components/BombTimer';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +22,10 @@ export default function Home() {
   const [zalgoText, setZalgoText] = useState([]);
 
   useEffect(() => {
-    setZalgoText([zalgoGeneration("find me some light please I can't see", 1, 1, 1), zalgoGeneration("it's so dark down here", 1, 1, 1)]);
+    setZalgoText([
+      zalgoGeneration("find me some light please I can't see", 1, 1, 1),
+      zalgoGeneration("it's so dark down here", 1, 1, 1),
+    ]);
   }, []);
 
   return (
@@ -53,6 +57,8 @@ export default function Home() {
             </div>
           </Link>
         </main>
+
+        <BombTimer className={styles.bombTimerOverlay} />
       </div>
     </div>
   );
