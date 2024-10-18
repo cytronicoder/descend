@@ -42,10 +42,10 @@ export default function Home() {
         <main>
           <p className={styles.devinfoContainer}>
             <span className={styles.errorCode}>
-              <strong>404</strong>: NOT_FOUND
+              <strong>425</strong>: TOO_EARLY
             </span>
             <span className={styles.devinfoLine}>
-              Code: <code className={styles.code}>DEPLOYMENT_NOT_FOUND</code>
+              Code: <code className={styles.code}>WEBSITE_NOT_FOUND</code>
             </span>
             <span className={styles.devinfoLine}>
               <s>ID</s> Orpheus: <code className={styles.code}>{zalgoText[0]}</code>
