@@ -31,11 +31,16 @@ export default function Home() {
   return (
     <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
       <Head>
-        <title>404: NOT_FOUND</title>
-        <meta name="description" content="404: Page Not Found" />
+        <title>425: Website Not Found</title>
+        <meta name="description" content="Where did it go wrong?" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000" />
+        <meta name="theme-color" content="#ec3750" />
+
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
       <div className={styles.container}>
