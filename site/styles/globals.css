@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.comic-shadow {
+  position: relative;
+  box-shadow: 10px 10px 0px #000, 20px 20px 0px #000, 30px 30px 0px #000;
+}
+
+.comic-shadow::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  box-shadow: -10px -10px 0px #000, -20px -20px 0px #000, -30px -30px 0px #000;
+}
+.triangle-cut {
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+}
